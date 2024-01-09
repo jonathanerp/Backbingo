@@ -3,7 +3,6 @@ package com.example.backbingo.Controller;
 import com.example.backbingo.Dto.UsuarioDTO;
 import com.example.backbingo.Service.IUsuarioService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
@@ -21,10 +20,10 @@ public class UsuarioController {
         return id;
     }
 
-    @PostMapping(path = "/login")
+    /*@PostMapping(path = "/login")
     public ResponseEntity<?> loginUsuario(@RequestBody LoginDTO loginDTO)
     {
         LoginResponse loginResponse = usuarioService.loginUsuario(loginDTO);
         return ResponseEntity.ok(loginResponse);
-    }
+    }*/
 }
